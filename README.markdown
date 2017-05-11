@@ -1,5 +1,4 @@
 
-
 # Maven repository for Google-Cloud-Messaging server library
 
 This permits to manage the Google GCM library with Maven.
@@ -13,7 +12,7 @@ Add the repository to your maven configuration:
 
     <repository>
         <id>gcm-server-repository</id>
-        <url>https://raw.github.com/slorber/gcm-server-repository/master/releases/</url>
+        <url>https://raw.githubusercontent.com/slorber/gcm-server-repository/master/releases/</url>
     </repository>
 
 And then add the dependency
@@ -21,6 +20,14 @@ And then add the dependency
     <dependency>
         <groupId>com.google.android.gcm</groupId>
         <artifactId>gcm-server</artifactId>
+        <version>1.0.2</version>
+    </dependency>
+    
+If you build your client with Android you can also add the client dependency, thanks to cjbest:
+
+    <dependency>
+        <groupId>com.google.android.gcm</groupId>
+        <artifactId>gcm-client</artifactId>
         <version>1.0.2</version>
     </dependency>
 
